@@ -27,12 +27,12 @@ cfg.db = {
   password = ""   -- password of your database
 }
 ```
-> Adaugati in vrp_garages>server.lua
+> Adaugati in vrp_garages>server.lua (daca nu aveti deja linia asta)
 ```lua
 MySQL.createCommand("vRP/ls_customs", "SELECT * FROM vrp_user_vehicles WHERE user_id = @user_id AND vehicle = @vehicle")
 ```
 
-> Adaugati in vrp_showroom>server.lua
+> Adaugati in vrp_showroom>server.lua (daca nu aveti deja linia asta)
 ```lua
 MySQL.createCommand("vRP/get_vehicle","SELECT * FROM vrp_user_vehicles WHERE user_id = @user_id AND vehicle = @vehicle")
 ```
